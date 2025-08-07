@@ -24,7 +24,7 @@ interface A{
 // lambda expression we can reduce to below code
 //as functional interface contains only method so we can remove the method here.
 
-public class Demo1 {
+public class lambda {
     public static void main(String[] args){
         //anonymous inner class
         A obj = ()->
