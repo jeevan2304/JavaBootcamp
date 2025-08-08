@@ -17,6 +17,7 @@ public class Streams {
 //instead of mappeddata if i use data to print then i will get an error as data stream is been already used for applying map.
 
           Predicate<Integer> predi =  n-> n%2==1;
+
           //used lambda expressions here and reduced.
 
         int result = nums.stream()
