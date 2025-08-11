@@ -1,3 +1,4 @@
+package day2;
 public class DesignPattern {
     public static void main(String[] args) {
         abc obj = abc.INSTANCE;

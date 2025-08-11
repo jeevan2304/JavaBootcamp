@@ -1,3 +1,5 @@
+package day2;
+
 class Phone {
     private String os;
     private String processor;

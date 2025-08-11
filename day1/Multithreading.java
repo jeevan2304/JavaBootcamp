@@ -25,6 +25,8 @@
 //        }
 //    }
 //}
+package day1;
+
 
 class Counter{
     int count;

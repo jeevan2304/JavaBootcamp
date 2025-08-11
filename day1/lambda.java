@@ -1,4 +1,5 @@
 //functional interface Lambda expressions
+package day1;
 
 @FunctionalInterface
 interface A{
