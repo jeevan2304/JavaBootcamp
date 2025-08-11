@@ -35,6 +35,7 @@ class Counter{
         count++;
     }
 }
+
 public class Multithreading {
     public static void main(String[] args) throws InterruptedException {
         Counter c = new Counter();
