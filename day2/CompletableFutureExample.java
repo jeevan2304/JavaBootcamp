@@ -2,6 +2,11 @@ import java.util.concurrent.CompletableFuture;
 public class CompletableFutureExample {
     public static void main(String[] args) {
 
+        //declaratrion of completable future for asynchronous tasks:
+        CompletableFuture<Void> test  = CompletableFuture.runAsync(()->{
+
+        });
+
         CompletableFuture<Void> task = CompletableFuture.runAsync(() -> {
             System.out.println("Task running in: " + Thread.currentThread().getName());
         });
