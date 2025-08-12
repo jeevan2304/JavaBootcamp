@@ -1,24 +1,14 @@
-package day2;
-public class DesignPattern {
+package advancedjava;
+public class DemoSingleTon {
     public static void main(String[] args) {
-        abc obj = abc.INSTANCE;
+        instance obj = instance.INSTANCE;
         obj.i = 5;
         obj.show();
 
-        abc obj1 = abc.INSTANCE;
+        instance obj1 = instance.INSTANCE;
         obj1.i = 5;
         obj1.show();
-
-
-
 //singleton
-    }
-}
-enum abc{//special type of class means it has private constructor
-    INSTANCE; //public static abc getinstance
-    int i ;
-    public void show(){
-        System.out.println(i);
     }
 }
 //thread problem is also solved using synchronized.

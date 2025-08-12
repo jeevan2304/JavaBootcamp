@@ -1,4 +1,5 @@
-package day2;
+package advancedjava;
+//functional programming example:
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -7,9 +8,8 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
-import java.util.stream.Stream;
 
-public class FunctionalProgramming {
+public class DemoCombined {
     public static void main(String[] args){
 
         List<String> names = Arrays.asList("Jeevan","Prajwal","Madhu","Mohith");

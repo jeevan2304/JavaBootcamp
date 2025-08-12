@@ -25,41 +25,20 @@
 //        }
 //    }
 //}
-package day1;
+package corefeatures;
 
-
-class Counter{
-    int count;
-    //this synchronized method allows only one thread to operate like increment at a time not both the threads
-    public synchronized void increment(){
-        count++;
-    }
-}
-
-public class Multithreading {
+public class DemoMultithreading {
     public static void main(String[] args) throws InterruptedException {
         Counter c = new Counter();
         //introducing the anonymous inner class which we had earlier studied in the lambda expressions(functional interface)
            Runnable obj1 = ()-> {
                    for(int i=0;i<1000;i++){
                        c.increment();
-//            System.out.println("hi");
-//            try {
-//                Thread.sleep(10);
-//            } catch (InterruptedException e) {
-//                throw new RuntimeException(e);
-//            }
         }
            };
            Runnable obj2 = ()->{
                for(int i=0;i<1000;i++){
                    c.increment();
-//                   System.out.println("hello");
-//                   try {
-//                       Thread.sleep(10);
-//                   } catch (InterruptedException e) {
-//                       throw new RuntimeException(e);
-//                   }
                }
            };
            //to get the thread priority:
@@ -78,8 +57,6 @@ public class Multithreading {
            t2.join();
 
            System.out.println(c.count);
-
     }
 }
-
 //we are using the Thread.sleep in order to make the thread await so that next thread can process we are just suggesting the scheduler by adding those the sleep produes an exception so it is surrounded with try-catch block

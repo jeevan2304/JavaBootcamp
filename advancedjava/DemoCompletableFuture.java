@@ -1,18 +1,16 @@
-package day2;
+package advancedjava;
 
 import java.util.concurrent.CompletableFuture;
-public class CompletableFutureExample {
+public class DemoCompletableFuture {
     public static void main(String[] args) {
 
         //declaratrion of completable future for asynchronous tasks:
         CompletableFuture<Void> test  = CompletableFuture.runAsync(()->{
-
         });
 
         CompletableFuture<Void> task = CompletableFuture.runAsync(() -> {
             System.out.println("Task running in: " + Thread.currentThread().getName());
         });
-
 
         CompletableFuture<String> greeting = CompletableFuture.supplyAsync(() -> {
             return "Hello, ";

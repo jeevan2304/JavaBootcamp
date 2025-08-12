@@ -1,6 +1,5 @@
-package day3;
+package employeepoc;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -15,18 +14,13 @@ public class Manager extends Employee {
         team.add(e);
     }
 
-    public void removeEmployee(Employee e) {
-        team.remove(e);
+    public void removeEmployee(String name) {
+        team.removeIf(emp -> emp.getName().equalsIgnoreCase(name));
     }
 
     public List<Employee> getTeam() {
         return team;
     }
 
-    public static class Builder extends Employee.Builder {
-        @Override
-        public Manager build() {
-            return new Manager(this);
-        }
-    }
+
 }
